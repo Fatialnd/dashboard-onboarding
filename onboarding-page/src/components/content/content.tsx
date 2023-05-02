@@ -1,3 +1,4 @@
+
 import SvgProgress from "../icons/SvgProgress";
 import Capabilities from "./capabilities";
 import Media from "./media";

@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Content from "./components/content/content";
 import Search from "./components/search/search";

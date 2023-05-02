@@ -1,3 +1,4 @@
+import React from "react";
 import SvgCrowd from "../icons/SvgCrowd";
 import SvgImg from "../icons/SvgImage";
 import SvgTick from "../icons/SvgTick";

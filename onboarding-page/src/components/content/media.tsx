@@ -1,6 +1,6 @@
 import SvgBook from "../icons/SvgBook";
 import SvgVideo from "../icons/SvgVideo";
-
+import React from "react";
 export default function Media() {
   return (
     <div className="media-wrapper">
