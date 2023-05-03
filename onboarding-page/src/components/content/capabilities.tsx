@@ -3,8 +3,13 @@ import SvgCrowd from "../icons/SvgCrowd";
 import SvgImg from "../icons/SvgImage";
 import SvgTick from "../icons/SvgTick";
 import SvgTicket from "../icons/Svgticket";
+
+type Props = {
+  children: JSX.Element;
+  text: string;
+}
 export default function Capabilities() {
-  const Features = ({ children, text }) => (
+  const Features = ({ children, text }: Props) => (
     <div className="features-wrapper">
       {children} <p className="feature-text">{text}</p>
     </div>
