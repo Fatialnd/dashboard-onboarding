@@ -6,12 +6,18 @@ import SvgProgram from "../icons/SvgProgram";
 import SvgVendors from "../icons/SvgVendors";
 import SvgBriefings from "../icons/SvgBriefings";
 import SvgInbox from "../icons/SvgInbox";
-import SvgMission from "../icons/Svgmission";
-import SvgDashboard from "../icons/svgDashboard";
+import SvgMission from "../icons/SvgMission";
+import SvgDashboard from "../icons/SvgDashboard";
 import SvgEventIcon from "../icons/SvgEventIcon";
 import SvgArrowDown from "../icons/SvgArrowDown";
+import { ItemsType } from "../shared/type";
 
-const SideBarLink = ({ children, items }) => (
+type Props = {
+  children: JSX.Element;
+  items: ItemsType;
+};
+
+const SideBarLink = ({ children, items }: Props) => (
   <div className="sidebar-items-wrapper">
     <a className="sidebar-link" href={items.link}>
       <div className="icon-wrapper">{children}</div>
@@ -39,31 +45,30 @@ export default function SideBar() {
       <SideBarLink items={{ link: "#controls", title: "Mission control" }}>
         <SvgMission />
       </SideBarLink>
-
       <SideBarLink items={{ link: "#insight", title: "Insight" }}>
         <SvgInsight />
       </SideBarLink>
-      <SideBarLink items={{ title: "Staff", href: "#staff" }}>
+      <SideBarLink items={{ link: "#staff", title: "Staff" }}>
         <SvgStaff />
       </SideBarLink>
-      <SideBarLink items={{ title: "Guests", href: "#guest" }}>
+      <SideBarLink items={{ link: "#guests", title: "Guest" }}>
         <SvgGuest />
       </SideBarLink>
-      <SideBarLink items={{ title: "Program", href: "#program" }}>
+      <SideBarLink items={{ link: "#program", title: "Program" }}>
         <SvgProgram />
       </SideBarLink>
-      <SideBarLink items={{ title: "Vendors", href: "#vendors" }}>
+      <SideBarLink items={{ link: "#vendors", title: "Vendors" }}>
         <SvgVendors />
       </SideBarLink>
       <SideBarLink
         items={{
           title: "Briefings",
-          href: "#briefings",
+          link: "#briefings",
         }}
       >
         <SvgBriefings />
       </SideBarLink>
-      <SideBarLink items={{ title: "Inbox", href: "inbox" }}>
+      <SideBarLink items={{ title: "Inbox", link: "inbox" }}>
         <SvgInbox />
       </SideBarLink>
 

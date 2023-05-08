@@ -269,6 +269,7 @@ body {
 }
 .features {
   margin: 12px 0;
+  padding-bottom: 40px;
 }
 @media screen and (max-height: 450px) {
   .sidenav {

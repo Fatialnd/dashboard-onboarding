@@ -1,11 +1,10 @@
-import React from "react";
 import SvgCrowd from "../icons/SvgCrowd";
 import SvgImg from "../icons/SvgImage";
 import SvgTick from "../icons/SvgTick";
 import SvgTicket from "../icons/Svgticket";
 
 type Props = {
-  children: JSX.Element;
+  children: React.ReactNode;  
   text: string;
 }
 export default function Capabilities() {

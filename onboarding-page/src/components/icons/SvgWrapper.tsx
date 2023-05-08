@@ -1,5 +1,9 @@
+import { ReactNode } from "react";
 
-export default function SvgWrapper({ children }) {
+type Props = {
+  children: ReactNode;
+};
+export default function SvgWrapper({ children }: Props) {
   return (
     <svg
       className="icon"
