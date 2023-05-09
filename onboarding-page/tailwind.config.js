@@ -23,6 +23,8 @@ export default {
       },
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"]
+      },fontFamily: {
+        dmsans: ["DM Sans", "sans-serif"]
       }
     },
   },
