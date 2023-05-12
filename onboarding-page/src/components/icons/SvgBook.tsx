@@ -1,8 +1,12 @@
 import SvgWrapper from "./SvgWrapper";
 
-export default function SvgBook() {
+type Props = {
+  className?: string;
+};
+
+export default function SvgBook( {className} : Props) {
   return (
-    <SvgWrapper>
+    <SvgWrapper className={className}>
       <rect width="40" height="40" rx="20" fill="#F6F6F6" />
       <path
         fillRule="evenodd"

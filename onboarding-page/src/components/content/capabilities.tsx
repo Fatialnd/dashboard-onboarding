@@ -4,28 +4,28 @@ import SvgTick from "../icons/SvgTick";
 import SvgTicket from "../icons/Svgticket";
 
 type Props = {
-  children: React.ReactNode;  
+  children: React.ReactNode;
   text: string;
-}
+};
 export default function Capabilities() {
   const Features = ({ children, text }: Props) => (
-    <div className="features-wrapper">
-      {children} <p className="feature-text">{text}</p>
+    <div className="flex mb-3 rounded-lg border border-neutral-8 h-[72px] items-center">
+      {children} <p className="m-0 font-bold text-base text-neutral-4 ml-4">{text}</p>
     </div>
   );
   return (
-    <div className="features">
+    <div className="my-4 mx-0 pb-10">
       <Features text="Crowdtypes and segments">
-        <SvgCrowd />
+        <SvgCrowd className=" w-10 h-10 ml-4" />
       </Features>
       <Features text="Access zones">
-        <SvgTick />
+        <SvgTick className=" w-10 h-10 ml-4"/>
       </Features>
       <Features text="Accreditation items">
-        <SvgTicket />
+        <SvgTicket className=" w-10 h-10 ml-4"/>
       </Features>
       <Features text="Upload event logo">
-        <SvgImg />
+        <SvgImg className=" w-10 h-10 ml-4"/>
       </Features>
     </div>
   );

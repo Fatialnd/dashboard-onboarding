@@ -4,10 +4,10 @@ import Avatar from "../../images/marina.jpg";
 
 export default function TopbarSides() {
   return (
-    <div className="side-icons-wrapper">
+    <div className="flex">
       <SvgNotification />
       <SvgInfo />
-      <img src={Avatar} alt="avatar" />
+      <img className="mt-[2px] h-6 w-6 mr-3" src={Avatar} alt="avatar" />
     </div>
   );
 }

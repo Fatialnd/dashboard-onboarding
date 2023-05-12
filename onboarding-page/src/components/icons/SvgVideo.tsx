@@ -1,8 +1,13 @@
+import { type } from "os";
 import SvgWrapper from "./SvgWrapper";
 
-export default function SvgVideo() {
+type Props = {
+  className?: string;
+};
+
+export default function SvgVideo({ className }: Props) {
   return (
-    <SvgWrapper>
+    <SvgWrapper className={className}>
       <rect width="408" height="240" rx="8" fill="#F6F6F6" />
       <rect x="172" y="88" width="64" height="64" rx="32" fill="#0057FF" />
       <path

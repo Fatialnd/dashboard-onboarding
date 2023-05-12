@@ -2,11 +2,13 @@ import { ReactNode } from "react";
 
 type Props = {
   children: ReactNode;
+  className?: string;
 };
-export default function SvgWrapper({ children }: Props) {
+
+export default function SvgWrapper({ children, className }: Props) {
   return (
     <svg
-      className="icon"
+      className={`icon ${className}`}
       viewBox="0 0 0"
       width="25"
       height="25"

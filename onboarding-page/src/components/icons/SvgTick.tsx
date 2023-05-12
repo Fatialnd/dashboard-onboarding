@@ -1,8 +1,12 @@
 import SvgWrapper from "./SvgWrapper";
 
-export default function SvgTick() {
+type Props = {
+  className: string;
+}
+
+export default function SvgTick({className} : Props) {
   return (
-    <SvgWrapper>
+    <SvgWrapper className={className}>
       <rect width="40" height="40" rx="20" fill="#F1F1F1" />
       <path
         fillRule="evenodd"
