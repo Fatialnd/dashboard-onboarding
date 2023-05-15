@@ -20,11 +20,3 @@ body {
   width: 100vw;
   display: block;
 }
-.sidebar-items-wrapper:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-radius: 4px;
-}
-.media-wrapper {
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16),
-    0px 0px 0px 1px rgba(0, 0, 0, 0.08);
-}

@@ -2,7 +2,7 @@ import SvgBook from "../icons/SvgBook";
 import SvgVideo from "../icons/SvgVideo";
 export default function Media() {
   return (
-    <div className="pt-6 pr-10 pb-0 pl-4 flex h-[358] border-blue-100 rounded-lg border-2 shodow-100 shadow-200">
+    <div className="pt-6 pr-10 pb-0 pl-4 flex h-[358] border-blue-100 rounded-lg border-2 shadow-3xl">
       <div className="flex flex-row">
         <SvgBook className=" w-10 h-10" />
         <div className="flex flex-col ml-4">
@@ -11,7 +11,7 @@ export default function Media() {
           </h3>
           <span className="font-light  text-sm font-dmsans">
             In2Event werkt met twee hoofdcategorien <br /> bezoekersgroepen;
-            Staff en Guests. Hier uitleggen waat het <br /> verschil is.{" "}
+            Staff en Guests. Hier uitleggen waat het <br /> verschil is.
           </span>
           <span className="font-light mb-10 text-sm font-dmsans">
             <br /> Het is mogelijk om binnen deze twee hoofdcategorien <br />

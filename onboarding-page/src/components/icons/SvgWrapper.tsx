@@ -12,7 +12,7 @@ export default function SvgWrapper({ children, className }: Props) {
       viewBox="0 0 0"
       width="20"
       height="20"
-      fill="#999999"
+      fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
     >
       {children}
