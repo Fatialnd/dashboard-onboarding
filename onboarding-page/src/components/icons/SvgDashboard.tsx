@@ -1,8 +1,12 @@
 import SvgWrapper from "./SvgWrapper";
 
-export default function SvgDashboard() {
+type Props = {
+  className: string;
+}
+
+export default function SvgDashboard({className}: Props) {
   return (
-    <SvgWrapper>
+    <SvgWrapper className={className}>
       <path
         fillOpacity="evenodd"
         clipRule="evenodd"

@@ -20,59 +20,9 @@ body {
   width: 100vw;
   display: block;
 }
-.sidebar-items-wrapper:hover .icon {
-  fill: #ffffff;
-}
-.sidebar-items-wrapper:hover .sidebar-link {
-  color: #ffffff;
-}
 .sidebar-items-wrapper:hover {
   background: rgba(255, 255, 255, 0.12);
   border-radius: 4px;
-}
-.icon-wrapper,
-.link-title {
-  padding-top: 8.5px;
-}
-.link-title {
-  padding-left: 3px;
-  margin-bottom: 11px;
-}
-
-.event-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-.event-icon .icon {
-  border-radius: 20%;
-}
-
-.search-wrapper input[type="text"] {
-  font-family: "DM Sans", sans-serif;
-  border: none;
-  margin-left: 10px;
-  font-size: 14px;
-  color: rgba(23, 23, 23, 0.5);
-}
-.search-wrapper .icon {
-  margin-top: 3px;
-  width: 19px;
-  height: 19px;
-}
-.side-icons-wrapper .icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 13px;
-}
-.side-icons-wrapper :first-child {
-  width: 29px;
-  height: 30px;
-  margin-bottom: 5px;
-}
-.progress-text {
-  font-size: 14px;
-  margin-left: 16px;
 }
 .media-wrapper {
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16),

@@ -1,8 +1,12 @@
 import SvgWrapper from "./SvgWrapper";
 
-export default function SvgSearch() {
+type Props = {
+  className?: string;
+}
+
+export default function SvgSearch({className}: Props) {
   return (
-    <SvgWrapper>
+    <SvgWrapper className={className}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"

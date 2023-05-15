@@ -1,8 +1,13 @@
 import SvgWrapper from "./SvgWrapper";
 
-export default function SvgEventIcon() {
+
+type Props = {
+  className?:string;
+}
+
+export default function SvgEventIcon({className}: Props) {
   return (
-    <SvgWrapper>
+    <SvgWrapper className={className}>
       <g clipPath="url(#clip0_6244_3891)">
         <rect
           width="28"

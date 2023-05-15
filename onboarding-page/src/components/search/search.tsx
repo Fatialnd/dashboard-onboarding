@@ -3,10 +3,10 @@ import TopbarSides from "./topbarSides";
 
 export default function Search() {
   return (
-    <div className="block pl-[270px] border-b border-neutral-0 relative overflow-y-auto">
-      <div className=" h-14 flex items-center my-0 mx-8 justify-between">
+    <div className="sticky inset-x-0 top-0 z-50 min-h-[64px] border-b border-b-neutral-8 bg-white">
+      <div className="h-16 flex items-center my-0 mx-8 justify-between">
         <div className="flex">
-          <SvgSearch />
+          <SvgSearch className="mt-1 mr-3" />
           <input type="text" placeholder="Search for anything" />
         </div>
         <TopbarSides />
