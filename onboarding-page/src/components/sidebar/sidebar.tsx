@@ -47,18 +47,18 @@ export default function SideBar() {
             </div>
           </div>
         </div>
-        <div className="py-5 px-4">
+        <div className="px-4">
           <SideBarLink items={{ link: "#dashboard", title: "dashboard" }}>
-            <SvgDashboard className="m-[2px]"/>
+            <SvgDashboard className="m-[2px]" />
           </SideBarLink>
           <SideBarLink items={{ link: "#controls", title: "Mission control" }}>
-            <SvgMission className="mb-1"/>
+            <SvgMission className="mb-1" />
           </SideBarLink>
           <SideBarLink items={{ link: "#insight", title: "Insight" }}>
             <SvgInsight />
           </SideBarLink>
           <SideBarLink items={{ link: "#staff", title: "Staff" }}>
-            <SvgStaff className="mb-[6px]"/>
+            <SvgStaff className="mb-[6px]" />
           </SideBarLink>
           <SideBarLink items={{ link: "#guests", title: "Guest" }}>
             <SvgGuest />
@@ -75,7 +75,7 @@ export default function SideBar() {
               link: "#briefings",
             }}
           >
-            <SvgBriefings  className="mb-1"/>
+            <SvgBriefings className="mb-1" />
           </SideBarLink>
           <SideBarLink items={{ title: "Inbox", link: "inbox" }}>
             <SvgInbox />

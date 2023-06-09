@@ -1,8 +1,9 @@
 import SvgBook from "../icons/SvgBook";
 import SvgVideo from "../icons/SvgVideo";
 export default function Media() {
+  const source = "https://player.vimeo.com/video/801902656?h=5a6c50f5e2";
   return (
-    <div className="pt-6 pr-10 pb-0 pl-4 flex h-[358] border-blue-100 rounded-lg border-2 shadow-3xl">
+    <div className="pt-6 pr-10 pb-0 pb-10 pl-4 flex h-[358] border-blue-100 rounded-lg border-2 shadow-3xl justify-between">
       <div className="flex flex-row">
         <SvgBook className=" w-10 h-10" />
         <div className="flex flex-col ml-4">
@@ -23,14 +24,17 @@ export default function Media() {
           </span>
           <a
             href="#info"
-            className="flex items-center justify-center font-dmsans text-sm font-semibold no-underline text-white  bg-3 hover:bg-blue-700  w-[86px] h-8 rounded mb-10"
+            className="flex items-center justify-center font-dmsans text-sm font-semibold no-underline text-white  bg-3 hover:bg-blue-700  w-[86px] h-8 rounded"
           >
             Continue
           </a>
         </div>
       </div>
-      <div className="inline-flex items-center ml-8">
-        <SvgVideo className="w-[408px] h-60" />
+      <div className=" flex min-h-[240px] max-w-[408px] rounded-xl">
+        <iframe
+          src={source}
+          allow="autoplay; fullscreen; picture-in-picture"
+        ></iframe>
       </div>
     </div>
   );
