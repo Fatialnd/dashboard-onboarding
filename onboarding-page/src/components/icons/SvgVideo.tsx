@@ -1,4 +1,3 @@
-import { type } from "os";
 import SvgWrapper from "./SvgWrapper";
 
 type Props = {

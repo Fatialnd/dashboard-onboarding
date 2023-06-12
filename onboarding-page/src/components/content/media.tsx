@@ -1,9 +1,8 @@
 import SvgBook from "../icons/SvgBook";
-import SvgVideo from "../icons/SvgVideo";
 export default function Media() {
   const source = "https://player.vimeo.com/video/801902656?h=5a6c50f5e2";
   return (
-    <div className="pt-6 pr-10 pb-0 pb-10 pl-4 flex h-[358] border-blue-100 rounded-lg border-2 shadow-3xl justify-between">
+    <div className="pt-6 pr-10 pb-10 pl-4 flex h-[358] border-blue-100 rounded-lg border-2 shadow-3xl justify-between">
       <div className="flex flex-row">
         <SvgBook className=" w-10 h-10" />
         <div className="flex flex-col ml-4">
