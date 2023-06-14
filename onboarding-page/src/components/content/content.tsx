@@ -25,7 +25,7 @@ export default function Content() {
           </div>
         </div>
         <Collapsible open title="Get to know In2Event">
-          <div className="flex gap-8">
+          <div className="flex justify-around gap-8">
             <div className="flex flex-col gap-7">
               <div className="font-light text-sm font-dmsans">
                 <span>
