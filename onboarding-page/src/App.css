@@ -20,3 +20,7 @@ body {
   width: 100vw;
   display: block;
 }
+#my-collapse {
+  overflow: hidden;
+  transition: height 0.2s ease-in-out;
+}
