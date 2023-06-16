@@ -1,5 +1,6 @@
 import { Component } from "react";
 import Collapsible from "./Collapsible";
+import SvgImg from "../icons/SvgImage";
 
 export default {
   title: "Collapsible",
@@ -7,7 +8,7 @@ export default {
 };
 
 export const Default = () => (
-  <Collapsible open title="Get to know In2Event">
+  <Collapsible svgIcon={<SvgImg className=" w-10 h-10"/>}open title="Get to know In2Event">
     <div className="flex justify-around gap-8">
       <div className="flex flex-col gap-7">
         <div className="font-light text-sm font-dmsans">

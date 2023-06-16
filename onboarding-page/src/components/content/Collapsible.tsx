@@ -2,15 +2,15 @@ import React, { ReactNode, useState, useRef, useEffect } from "react";
 import SvgChevronDown from "../icons/SvgChevronDown";
 import SvgChevronRight from "../icons/SvgChevronRight";
 import "../../App.css";
-import SvgBook from "../icons/SvgBook";
 
 interface IProps {
   open?: Boolean;
   title: string;
   children: ReactNode;
+  svgIcon: JSX.Element;
 }
 
-const Collapsible: React.FC<IProps> = ({ open, children, title }) => {
+const Collapsible: React.FC<IProps> = ({ open, children, title, svgIcon }) => {
   const [isOpen, setIsOpen] = useState(open);
   const [height, setHeight] = useState<number | undefined>(
     open ? undefined : 0
@@ -40,17 +40,17 @@ const Collapsible: React.FC<IProps> = ({ open, children, title }) => {
       <div
         className={`${
           isOpen
-            ? "border-2 border-blue-100 pb-10 shadow-3xl"
-            : " border pb-0 border-neutral-8"
-        } flex-col items-center rounded-lg  pl-6 pr-8 transition-all delay-150 duration-100 overflow-hidden`}
+            ? "border-2 border-blue-100 pb-10 shadow-3xl "
+            : " border pb-0 border-neutral-8  max-h-[72px]"
+        } rounded-lg  mb-3 pl-6 pr-8 overflow-hidden duration-300 ease-in `}
       >
-        <div className="py-6  flex justify-between">
+        <div className="my-4 flex justify-between">
           <div className="flex justify-center items-center ">
-            <SvgBook className=" w-10 h-10 fill-slate-50" />
+            {svgIcon}
             <h3
               className={`${
-                isOpen ? " text-neutral-7" : "text-neutral-4"
-              } text-lg  font-bold font-dmsans ml-4`}
+                isOpen ? "text-lg  text-neutral-7" : " text-base  text-neutral-4"
+              }  font-bold font-dmsans ml-4`}
             >
               {title}
             </h3>
