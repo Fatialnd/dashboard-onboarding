@@ -4,9 +4,9 @@ import SvgChevronRight from "../icons/SvgChevronRight";
 import "../../App.css";
 
 interface IProps {
-  open?: Boolean;
+  open?: Boolean; // Could you explain why this has a question mark and what it means?
   title: string;
-  children: ReactNode;
+  children: ReactNode; // What is the difference ReactNode and the JSX.Element?
   svgIcon: JSX.Element;
 }
 
@@ -22,14 +22,22 @@ const Collapsible: React.FC<IProps> = ({ open, children, title, svgIcon }) => {
   };
 
   useEffect(() => {
-    if (isOpen) setHeight(ref.current?.getBoundingClientRect().height);
-    else setHeight(0);
+    if (isOpen) {
+      setHeight(ref.current?.getBoundingClientRect().height);
+    } else {
+      setHeight(0);
+    }
+
+    // What does this do?
     if (!height || !isOpen || !ref.current) return undefined;
 
+    // How does a resize observer work?
     const resizeObserver = new ResizeObserver((el) => {
       setHeight(el[0].contentRect.height);
     });
+
     resizeObserver.observe(ref.current);
+
     return () => {
       resizeObserver.disconnect();
     };

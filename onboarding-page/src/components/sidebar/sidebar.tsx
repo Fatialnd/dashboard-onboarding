@@ -12,6 +12,7 @@ import SvgEventIcon from "../icons/SvgEventIcon";
 import SvgArrowDown from "../icons/SvgArrowDown";
 import { ItemsType } from "../shared/type";
 
+// What is the difference between a type and an interface?
 type Props = {
   children: JSX.Element;
   items: ItemsType;
