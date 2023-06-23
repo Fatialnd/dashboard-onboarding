@@ -11,7 +11,7 @@ interface IProps {
 }
 
 const Collapsible: React.FC<IProps> = ({ open, children, title, svgIcon }) => {
-  const [isOpen, setIsOpen] = useState(open);
+  const [isOpen, setIsOpen] = useState(!open);
   const [height, setHeight] = useState<number | undefined>(
     open ? undefined : 0
   );
@@ -49,7 +49,9 @@ const Collapsible: React.FC<IProps> = ({ open, children, title, svgIcon }) => {
             {svgIcon}
             <h3
               className={`${
-                isOpen ? "text-lg  text-neutral-7" : " text-base  text-neutral-4"
+                isOpen
+                  ? "text-lg  text-neutral-7"
+                  : " text-base  text-neutral-4"
               }  font-bold font-dmsans ml-4`}
             >
               {title}

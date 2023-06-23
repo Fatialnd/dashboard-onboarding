@@ -4,7 +4,7 @@ import SvgImg from "../icons/SvgImage";
 import SvgProgress from "../icons/SvgProgress";
 import SvgTick from "../icons/SvgTick";
 import SvgTicket from "../icons/Svgticket";
-import Search from "../search/search";
+import Search from "../search/Search";
 import Collapsible from "./Collapsible";
 
 export default function Content() {
@@ -179,6 +179,7 @@ export default function Content() {
         </Collapsible>
         <Collapsible
           svgIcon={<SvgImg className=" w-10 h-10" />}
+          open
           title="Upload event logo"
         >
           <div className="flex justify-around gap-8">
