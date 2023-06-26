@@ -3,6 +3,7 @@ export interface ItemsType {
     title: string;
 }
 
+// These are the same.
 export interface SubItemsType {
     link: string;
     title: string;
