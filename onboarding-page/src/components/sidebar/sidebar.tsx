@@ -30,7 +30,7 @@ const SideBarLink = ({ children, items }: Props) => (
 export default function SideBar() {
   return (
     <>
-      <div className="h-screen w-60 flex-none shrink-0 top-0 left-0 bg-0 overflow-x-hidden z-10">
+      <nav className="h-screen w-60 flex-none shrink-0 top-0 left-0 bg-0 overflow-x-hidden z-10">
         <div className=" border-b border-neutral-3 z-30 w-60 pt-3 h-16">
           <div className="inline-flex items-center ml-6">
             <div className="mb-2 mr-3">
@@ -83,7 +83,7 @@ export default function SideBar() {
 
           <SubItems />
         </div>
-      </div>
+      </nav>
     </>
   );
 }

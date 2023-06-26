@@ -4,15 +4,15 @@ import SvgImg from "../icons/SvgImage";
 import SvgProgress from "../icons/SvgProgress";
 import SvgTick from "../icons/SvgTick";
 import SvgTicket from "../icons/Svgticket";
-import Search from "../search/Search";
+import Header from "../header/Header";
 import Collapsible from "./Collapsible";
 
 export default function Content() {
   const source = "https://player.vimeo.com/video/801902656?h=5a6c50f5e2";
   return (
-    <div className="relative flex flex-1 flex-col overflow-y-auto">
-      <Search />
-      <div className="font-dmsans mt-14 mx-[120px] mb-[90px]">
+    <section className="relative flex flex-1 flex-col overflow-y-auto">
+      <Header />
+      <main className="font-dmsans mt-14 mx-[120px] mb-[90px]">
         <div className="inline-flex flex-col">
           <h2 className="font-bold text-2xl text-neutral-7">
             Hi there, Marina 👋🏼
@@ -214,7 +214,7 @@ export default function Content() {
             ></iframe>
           </div>
         </Collapsible>
-      </div>
-    </div>
+      </main>
+    </section>
   );
 }
