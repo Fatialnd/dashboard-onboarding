@@ -31,20 +31,16 @@ export default function SideBar() {
   return (
     <>
       <nav className="h-screen w-60 flex-none shrink-0 top-0 left-0 bg-0 overflow-x-hidden z-10">
-        <div className=" border-b border-neutral-3 z-30 w-60 pt-3 h-16">
-          <div className="inline-flex items-center ml-6">
-            <div className="mb-2 mr-3">
-              <SvgEventIcon className="rounded" />
+        <div className="flex items-center border-b border-neutral-3 z-30 h-16">
+          <div className="grid grid-cols-4 grid-rows-2 place-content-center justify-center">
+            <SvgEventIcon className="rounded row-span-2 place-self-center h-7 w-7" />
+            <div className="col-span-2 self-end text-white text-sm font-dmsans not-italic font-medium">
+              Social distival 2021
             </div>
-            <div className="flex flex-col">
-              <div className="text-white text-sm font-dmsans not-italic font-medium mb-1">
-                Social distival 2021
-              </div>
-              <div className="text-xs text-neutral-1">December 17th</div>
+            <div className="col-span-2 col-start-2 row-start-2 text-xs text-neutral-1">
+              December 17th
             </div>
-            <div className="mt-2 ml-4 mb-1">
-              <SvgArrowDown />
-            </div>
+            <SvgArrowDown className="row-span-2 col-start-4 row-start-1 place-self-center mt-2 ml-4" />
           </div>
         </div>
         <div className="px-4">
