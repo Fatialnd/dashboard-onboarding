@@ -41,7 +41,7 @@ export default function Content() {
           <iframe
             src="https://player.vimeo.com/video/801902656?h=5a6c50f5e2"
             allow="autoplay; fullscreen; picture-in-picture"
-          ></iframe>
+          />
         </div>
       ),
     },
