@@ -14,6 +14,9 @@ export default {
       },
     },
     extend: {
+      content: {
+        arrowdown: "url('./src/images/Vector.png')",
+      },
       colors: {
         white: "#ffffff",
         neutral: {

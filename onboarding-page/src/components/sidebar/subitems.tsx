@@ -1,7 +1,7 @@
-import { SubItemsType } from "../shared/type";
+import { ItemsType } from "../shared/type";
 
 type Props = {
-  subItems: SubItemsType;
+  subItems: ItemsType;
 };
 
 const SubListItem = ({ subItems }: Props) => (
