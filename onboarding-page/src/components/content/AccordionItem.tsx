@@ -30,10 +30,10 @@ function AccordionItem({
           : "border  pb-0 border-neutral-8 max-h-[72px]"
       }  rounded-lg mb-3 pl-6 pr-8`}
     >
-      <div>
+      
         <button
           className={`${
-            isOpen ? "after:rotate-[-90deg]" : ""
+            isOpen ? "" : "after:rotate-[-90deg]"
           } my-4 flex justify-between w-full cursor-pointer after:content-arrowdown after:mt-2 after:ease-in-out after:duration-300`}
           onClick={btnOnClick}
         >
@@ -50,9 +50,9 @@ function AccordionItem({
             </h3>
           </div>
         </button>
-      </div>
+      
       <div
-        className="overflow-hidden ease-in-out duration-300"
+        className="overflow-hidden ease-in-out duration-200"
         style={{ height }}
       >
         <div ref={contentRef}>{data.content}</div>
