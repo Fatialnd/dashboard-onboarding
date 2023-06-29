@@ -58,7 +58,7 @@ const Collapsible: React.FC<IProps> = ({ open, children, title, svgIcon }) => {
             </h3>
           </div>
 
-          <button type="button" className="btn" onClick={handleFilterOpening}>
+          <button type="button"  onClick={handleFilterOpening}>
             {!isOpen ? <SvgChevronRight /> : <SvgChevronDown />}
           </button>
         </div>

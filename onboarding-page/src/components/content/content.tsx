@@ -4,11 +4,95 @@ import SvgImg from "../icons/SvgImage";
 import SvgProgress from "../icons/SvgProgress";
 import SvgTick from "../icons/SvgTick";
 import SvgTicket from "../icons/Svgticket";
+import SvgChevronRight from "../icons/SvgChevronRight";
 import Header from "../header/Header";
 import Collapsible from "./Collapsible";
+import { ReactNode } from "react";
+import Accordion from "./Accordion";
+import AccordionItem from "./AccordionItem";
+
+
 
 export default function Content() {
+  const accordionItems = [
+    {
+      svgicon: <SvgBook className=" w-10 h-10" />,
+      title: "Get to know In2Event",
+      content: (
+          <div className="flex justify-around gap-8">
+            <div className="flex flex-col gap-7">
+              <div className="font-light text-sm font-dmsans">
+                <span>
+                  In2Event werkt met twee hoofdcategorien <br />{" "}
+                  bezoekersgroepen; Staff en Guests. Hier uitleggen waat het{" "}
+                  <br /> verschil is.
+                </span>
+                <span className="mb-10">
+                  <br /> Het is mogelijk om binnen deze twee hoofdcategorien{" "}
+                  <br />
+                  segmenten aan te maken. Dit kan handig zijn wanneer je
+                  <br /> tussen verschillende groepen binnen een van de <br />
+                  hoofdcategorieen bijvoorbeeld een andere briefing wilt
+                  <br />
+                  sturen.
+                </span>
+              </div>
+              <a
+                href="#info"
+                className="flex items-center justify-center font-dmsans text-sm font-semibold no-underline text-white  bg-3 hover:bg-blue-700  w-[86px] h-8 rounded"
+              >
+                Continue
+              </a>
+            </div>
+
+            <iframe
+              src="https://player.vimeo.com/video/801902656?h=5a6c50f5e2"
+              allow="autoplay; fullscreen; picture-in-picture"
+            ></iframe>
+          </div>
+      ),
+    },
+    {
+      svgicon: <SvgCrowd className=" w-10 h-10" />,
+      title: "Get to know In2Event",
+      content: (
+          <div className="flex justify-around gap-8">
+            <div className="flex flex-col gap-7">
+              <div className="font-light text-sm font-dmsans">
+                <span>
+                  In2Event werkt met twee hoofdcategorien <br />{" "}
+                  bezoekersgroepen; Staff en Guests. Hier uitleggen waat het{" "}
+                  <br /> verschil is.
+                </span>
+                <span className="mb-10">
+                  <br /> Het is mogelijk om binnen deze twee hoofdcategorien{" "}
+                  <br />
+                  segmenten aan te maken. Dit kan handig zijn wanneer je
+                  <br /> tussen verschillende groepen binnen een van de <br />
+                  hoofdcategorieen bijvoorbeeld een andere briefing wilt
+                  <br />
+                  sturen.
+                </span>
+              </div>
+              <a
+                href="#info"
+                className="flex items-center justify-center font-dmsans text-sm font-semibold no-underline text-white  bg-3 hover:bg-blue-700  w-[86px] h-8 rounded"
+              >
+                Continue
+              </a>
+            </div>
+
+            <iframe
+              src="https://player.vimeo.com/video/801902656?h=5a6c50f5e2"
+              allow="autoplay; fullscreen; picture-in-picture"
+            ></iframe>
+          </div>
+      ),
+    }
+    
+  ]
   const source = "https://player.vimeo.com/video/801902656?h=5a6c50f5e2";
+
   return (
     <section className="relative flex flex-1 flex-col overflow-y-auto">
       <Header />
@@ -28,6 +112,9 @@ export default function Content() {
             <p className="text-sm ml-4">5 steps remaining</p>
           </div>
         </div>
+
+        <Accordion items={accordionItems} />
+
         <Collapsible
           svgIcon={<SvgBook className=" w-10 h-10" />}
           open
@@ -65,7 +152,6 @@ export default function Content() {
             ></iframe>
           </div>
         </Collapsible>
-
         <Collapsible
           svgIcon={<SvgCrowd className=" w-10 h-10" />}
           open

@@ -1,4 +1,3 @@
-import { Component } from "react";
 import Collapsible from "./Collapsible";
 import SvgImg from "../icons/SvgImage";
 
