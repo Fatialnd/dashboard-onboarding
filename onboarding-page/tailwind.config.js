@@ -14,6 +14,9 @@ export default {
       },
     },
     extend: {
+      spacing: {
+        '72': '72px',
+      },
       content: {
         arrowdown: "url('./src/images/Vector.png')",
       },
