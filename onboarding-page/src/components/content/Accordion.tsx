@@ -3,7 +3,7 @@ import { AccordionData } from "../shared/type";
 import AccordionItem from "./AccordionItem";
 
 function Accordion({ items }: { items: Array<AccordionData> }) {
-  const [currentIndex, setCurrentIndex] = useState(-1);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const btnOnClick = (index: number) => {
     setCurrentIndex((currentValue) => (currentValue !== index ? index : -1));
   };
