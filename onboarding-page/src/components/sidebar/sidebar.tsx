@@ -19,7 +19,7 @@ type Props = {
 
 const SideBarLink = ({ children, items }: Props) => (
   <a
-    className="flex flex-row items-center hover:bg-1  hover:rounded w-52 h-10 ml-0 my-3 p-0 text-neutral-1 hover:text-white py-[6] pr-2 pl-4 no-underline font-dmsans font-semibold text-sm"
+    className="flex flex-row items-center hover:bg-1  hover:rounded w-52 h-10 ml-0 my-2 p-0 text-neutral-1 hover:text-white py-[6] pr-2 pl-4 no-underline font-dmsans font-semibold text-sm"
     href={items.link}
   >
     <div className="pt-2 ">{children}</div>
@@ -62,7 +62,7 @@ export default function SideBar() {
           <SvgProgram />
         </SideBarLink>
         <SideBarLink items={{ link: "#vendors", title: "Vendors" }}>
-          <SvgVendors />
+          <SvgVendors className="mb-1"/>
         </SideBarLink>
         <SideBarLink
           items={{
@@ -73,10 +73,11 @@ export default function SideBar() {
           <SvgBriefings className="mb-1" />
         </SideBarLink>
         <SideBarLink items={{ title: "Inbox", link: "inbox" }}>
-          <SvgInbox />
+          <SvgInbox  className="mb-1"/>
         </SideBarLink>
-
-        <SubItems />
+        <div className="mt-6">
+          <SubItems />
+        </div>
       </div>
     </nav>
   );

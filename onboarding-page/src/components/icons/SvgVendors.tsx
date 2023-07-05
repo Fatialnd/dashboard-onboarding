@@ -1,8 +1,12 @@
 import SvgWrapper from "./SvgWrapper";
 
-export default function SvgVendors() {
+type Props = {
+  className: string;
+}
+
+export default function SvgVendors({className}: Props) {
   return (
-    <SvgWrapper>
+    <SvgWrapper className={className}>
       <path d="M16.3878 13.6083L9.80872 7.02919C10.4594 5.36634 10.0979 3.4143 8.72425 2.04064C7.2783 0.594687 5.10936 0.305496 3.37421 1.10077L6.48302 4.20958L4.31409 6.37851L1.13298 3.26971C0.265408 5.00485 0.626897 7.17379 2.07285 8.61974C3.44651 9.9934 5.39855 10.3549 7.0614 9.70421L13.6405 16.2833C13.9297 16.5725 14.3635 16.5725 14.6527 16.2833L16.3155 14.6205C16.677 14.3313 16.677 13.8252 16.3878 13.6083Z" />
     </SvgWrapper>
   );

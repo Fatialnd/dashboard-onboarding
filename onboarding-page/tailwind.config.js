@@ -16,6 +16,7 @@ export default {
     extend: {
       spacing: {
         '72': '72px',
+        '120': '120px'
       },
       content: {
         arrowdown: "url('./src/images/Vector.png')",
@@ -33,6 +34,7 @@ export default {
           8: "#dcdcdc",
           9: "rgba(23, 23, 23, 0.64);",
           10: "#0057ff",
+          11: "#F6F6F6"
         },
         blue: {
           100: "#0057ff",

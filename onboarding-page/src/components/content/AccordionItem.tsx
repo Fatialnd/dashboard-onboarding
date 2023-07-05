@@ -15,7 +15,7 @@ function AccordionItem({
         isOpen
           ? "border-2 border-blue-100 pb-10 shadow-3xl"
           : "border  pb-0 border-neutral-8 max-h-[72px]"
-      }  rounded-lg mb-3 pl-6 pr-8`}
+      }  rounded-lg mb-3 pl-6 pr-8 transition ease-in-out duration-400`}
     >
       <button
         className={`${
@@ -23,7 +23,7 @@ function AccordionItem({
         } my-4 flex justify-between w-full cursor-pointer after:content-arrowdown after:mt-2 after:ease-in-out after:duration-300`}
         onClick={btnOnClick}
       >
-        <div className="flex justify-center items-center ">
+        <div className={`flex justify-center items-center`}>
           {data.svgicon}
           <h3
             className={`${
@@ -38,7 +38,7 @@ function AccordionItem({
       <div
         className={`${
           isOpen ? "h-auto" : "h-0" 
-        } overflow-hidden ease-in-out duration-500`}
+        } overflow-hidden`}
       >
         <div>{data.content}</div>
       </div>
