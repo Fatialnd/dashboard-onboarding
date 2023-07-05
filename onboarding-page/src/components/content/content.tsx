@@ -20,10 +20,10 @@ export default function Content({ isOpen }: { isOpen: boolean }) {
         <div className="flex justify-around gap-8">
           <div className="flex-auto flex-col gap-7">
             <div className="font-light text-sm font-dmsans mb-7">
-              <span className="text-justify">
+              <p className="text-justify">
                 In2Event werkt met twee hoofdcategorien bezoekersgroepen; Staff
                 en Guests. Hier uitleggen waat het verschil is.
-              </span>
+              </p>
               <p className="mt-7">
                 Het is mogelijk om binnen deze twee hoofdcategorien segmenten
                 aan te maken. Dit kan handig zijn wanneer je tussen

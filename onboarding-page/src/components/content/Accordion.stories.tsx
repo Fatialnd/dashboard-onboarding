@@ -19,19 +19,16 @@ export const Default = () => {
         <div className="flex justify-around gap-8">
           <div className="flex flex-col gap-7">
             <div className="font-light text-sm font-dmsans">
-              <span>
-                In2Event werkt met twee hoofdcategorien <br /> bezoekersgroepen;
-                Staff en Guests. Hier uitleggen waat het <br /> verschil is.
-              </span>
-              <span className="mb-10">
-                <br /> Het is mogelijk om binnen deze twee hoofdcategorien{" "}
-                <br />
-                segmenten aan te maken. Dit kan handig zijn wanneer je
-                <br /> tussen verschillende groepen binnen een van de <br />
-                hoofdcategorieen bijvoorbeeld een andere briefing wilt
-                <br />
-                sturen.
-              </span>
+              <p className="text-justify">
+                In2Event werkt met twee hoofdcategorien bezoekersgroepen; Staff
+                en Guests. Hier uitleggen waat het verschil is.
+              </p>
+              <p className="mt-7">
+                Het is mogelijk om binnen deze twee hoofdcategorien segmenten
+                aan te maken. Dit kan handig zijn wanneer je tussen
+                verschillende groepen binnen een van de hoofdcategorieen
+                bijvoorbeeld een andere briefing wilt sturen.
+              </p>
             </div>
             <a
               href="#info"
@@ -77,8 +74,5 @@ export const Default = () => {
       ),
     },
   ];
-  return (
-     <Accordion items={accordionItems} />
-  )
-  
+  return <Accordion items={accordionItems} />;
 };
