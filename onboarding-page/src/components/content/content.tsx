@@ -92,7 +92,7 @@ export default function Content({ isOpen }: { isOpen: boolean }) {
             Let’s configure your event
           </h3>
           <div className="flex items-center sm:max-lg:flex-col">
-            <SvgProgress className="w-120 h-3 sm:max-lg:order-last" />
+            <SvgProgress className="w-120 h-2 sm:max-lg:order-last" />
             <p className="text-sm ml-4 sm:max-lg:text-xs sm:max-lg:mb-3">5 steps remaining</p>
           </div>
         </div>
