@@ -23,7 +23,7 @@ function AccordionItem({
         } my-4 flex justify-between w-full cursor-pointer after:content-arrowdown after:mt-2 after:ease-in-out after:duration-300`}
         onClick={btnOnClick}
       >
-        <div className="flex justify-center items-center">
+        <div  className={`${isOpen? "text-black": "text-neutral-1"} flex justify-center items-center`}>
           {data.svgicon}
           <h3
             className={`${
