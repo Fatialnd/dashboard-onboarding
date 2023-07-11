@@ -9,7 +9,6 @@ export default function SvgWrapper({ children, className }: Props) {
   return (
     <svg
       className={`icon ${className}`}
-      viewBox="0 0 0"
       width="20"
       height="20"
       fill="currentColor"
