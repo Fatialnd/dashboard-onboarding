@@ -7,24 +7,20 @@ import SvgTicket from "../icons/Svgticket";
 import Header from "../header/Header";
 import Accordion from "./Accordion";
 
-export default function Content({ isOpen }: { isOpen: boolean }) {
+export default function Content() {
   const accordionItems = [
     {
-      svgicon: (
-        <SvgBook
-          className={`${isOpen ? " fill-black" : "fill-neutral-11"} w-10 h-10 `}
-        />
-      ),
+      svgicon: <SvgBook className="w-10 h-10" />,
       title: "Get to know In2Event",
       content: (
         <div className="flex flex-row justify-around gap-8 sm:max-lg:flex-col">
           <div className="flex-auto flex-col gap-7 sm:max-lg:order-last">
             <div className="font-light text-sm font-dmsans mb-7">
-              <p className="text-justify">
+              <p>
                 In2Event werkt met twee hoofdcategorien bezoekersgroepen; Staff
                 en Guests. Hier uitleggen waat het verschil is.
               </p>
-              <p className="mt-7">
+              <p className="mt-6">
                 Het is mogelijk om binnen deze twee hoofdcategorien segmenten
                 aan te maken. Dit kan handig zijn wanneer je tussen
                 verschillende groepen binnen een van de hoofdcategorieen
@@ -93,7 +89,9 @@ export default function Content({ isOpen }: { isOpen: boolean }) {
           </h3>
           <div className="flex items-center sm:max-lg:flex-col">
             <SvgProgress className="w-120 h-2 sm:max-lg:order-last" />
-            <p className="text-sm ml-4 sm:max-lg:text-xs sm:max-lg:mb-3">5 steps remaining</p>
+            <p className="text-sm ml-4 sm:max-lg:text-xs sm:max-lg:mb-3">
+              5 steps remaining
+            </p>
           </div>
         </div>
 
